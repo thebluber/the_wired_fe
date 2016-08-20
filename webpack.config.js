@@ -1,5 +1,3 @@
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-
 module.exports = {
   entry: './app/app.js',
   output: {
@@ -9,14 +7,11 @@ module.exports = {
   devServer: {
     proxy: {
       '/api/statuses/*': {
-        target: 'http://localhost',
+        target: 'https://social.heldscal.la',
         secure: false
       }
     }
   },
-  plugins: [new HtmlWebpackPlugin({
-    title: 'The Wired'
-  })],
   module: {
     loaders: [
       {
