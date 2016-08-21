@@ -5,7 +5,118 @@
     <title>The Wired</title>
   </head>
   <body>
-    <test></test>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">gnusocial</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <form class="navbar-form">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </li>
+            <li class="dropdown" uib-dropdown tooltip-placement="bottom" uib-tooltip="Profile and Settings">
+              <a href="#" class="dropdown-toggle" uib-dropdown-toggle>
+                <i class="fa fa-user"></i>
+              </a>
+              <ul class="dropdown-menu" uib-dropdown-menu>
+                <li><a href="#">View Profile Page</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Read Terms of Use</a></li>
+                <li><a href="#"><strong>Invite a Friend!</strong></a></li>
+                <li><a href="#">Keyboard Shortcuts</a></li>
+                <li><a href="#">Classic Theme</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Sign Out</a></li>
+              </ul>
+            </li>
+            <li class="dropdown" tooltip-placement="bottom" uib-tooltip="What's quipping?">
+              <a href="#">
+                <i class="fa fa-edit"></i>
+              </a>
+            </li>
+
+            <li class="dropdown" uib-dropdown>
+              <a href="#" class="dropdown-toggle" uib-dropdown-toggle role="button"> Language: English <span class="caret"></span></a>
+              <ul class="dropdown-menu" uib-dropdown-menu >
+                <li><a href="#">Deutsch</a></li>
+                <li><a href="#">Klingon</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container" id="content">
+      <div class="row">
+
+        <div class="col-lg-4">
+          <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading text-center">
+              <span class="glyphicon glyphicon-user"></span>
+              <br/>
+              <strong>NAME</strong>
+              <br/>
+              @quitterer
+            </div>
+            <div class="panel-body">
+              <p>...</p>
+            </div>
+
+            <div class="panel-footer">
+              <form>
+                  <input type="text" class="form-control" id="quitter" placeholder="What's quipping?">
+              </form>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Panel heading</div>
+            <div class="panel-body">
+              <p>...</p>
+            </div>
+
+            <!-- Table -->
+            <table class="table">
+              ...
+            </table>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Panel heading</div>
+            <div class="panel-body">
+              <p>...</p>
+            </div>
+
+            <!-- Table -->
+            <table class="table">
+              ...
+            </table>
+          </div>
+          <test></test>
+        </div>
+      </div>
+    </div>
+
     <script type="text/javascript" src="bundle.js"></script>
   </body>
 </html>
